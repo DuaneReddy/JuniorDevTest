@@ -1,0 +1,42 @@
+﻿@model MVPTest.Models.Extra
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Extra</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Music)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Music)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soccer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soccer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
